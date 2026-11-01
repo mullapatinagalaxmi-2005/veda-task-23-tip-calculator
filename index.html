@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive tip calculator built with HTML, CSS and JavaScript.">
+  <title>Tip Calculator | Veda Technology Task 23</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Tip Calculator home">
+        <span class="brand-mark">V</span>
+        <span>TIP<span class="brand-accent">CALC</span></span>
+      </a>
+      <span class="task-label">VEDA TECHNOLOGY · TASK 23</span>
+    </header>
+
+    <section class="calculator" aria-labelledby="page-title">
+      <div class="intro">
+        <p class="eyebrow">SIMPLE · FAST · ACCURATE</p>
+        <h1 id="page-title">Tip Calculator</h1>
+        <p class="subtitle">Calculate the tip and split the total bill with ease.</p>
+      </div>
+
+      <div class="calculator-grid">
+        <section class="form-panel" aria-label="Bill details">
+          <div class="field-group">
+            <label for="bill">Bill amount</label>
+            <div class="input-wrap">
+              <span class="prefix" aria-hidden="true">₹</span>
+              <input id="bill" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0.00">
+            </div>
+            <small class="error" id="bill-error" aria-live="polite"></small>
+          </div>
+
+          <div class="field-group">
+            <div class="label-row">
+              <label>Choose tip</label>
+              <span class="muted">Select a percentage</span>
+            </div>
+            <div class="tip-options" role="group" aria-label="Tip percentage">
+              <button class="tip-btn" type="button" data-tip="5">5%</button>
+              <button class="tip-btn" type="button" data-tip="10">10%</button>
+              <button class="tip-btn active" type="button" data-tip="15" aria-pressed="true">15%</button>
+              <button class="tip-btn" type="button" data-tip="20">20%</button>
+              <button class="tip-btn" type="button" data-tip="25">25%</button>
+            </div>
+            <label class="custom-label" for="custom-tip">Or enter a custom tip (%)</label>
+            <input id="custom-tip" type="number" min="0" max="100" step="0.1" inputmode="decimal" placeholder="e.g. 12.5">
+            <small class="error" id="tip-error" aria-live="polite"></small>
+          </div>
+
+          <div class="field-group">
+            <div class="label-row">
+              <label for="people">Number of people</label>
+              <span class="muted">Split the bill</span>
+            </div>
+            <div class="people-control">
+              <button type="button" id="decrease" class="step-btn" aria-label="Decrease number of people">−</button>
+              <input id="people" type="number" min="1" step="1" value="1" inputmode="numeric">
+              <button type="button" id="increase" class="step-btn" aria-label="Increase number of people">+</button>
+            </div>
+            <small class="error" id="people-error" aria-live="polite"></small>
+          </div>
+
+          <button type="button" class="reset-btn" id="reset">↻ Reset calculator</button>
+        </section>
+
+        <section class="result-panel" aria-label="Calculation results">
+          <div class="result-heading">
+            <div>
+              <p class="eyebrow light">YOUR SUMMARY</p>
+              <h2>Here's the breakdown</h2>
+            </div>
+            <span class="result-icon" aria-hidden="true">₹</span>
+          </div>
+
+          <div class="result-row">
+            <div><strong>Tip amount</strong><span>Total tip</span></div>
+            <output id="tip-total">₹0.00</output>
+          </div>
+          <div class="result-row">
+            <div><strong>Total bill</strong><span>Bill + tip</span></div>
+            <output id="grand-total">₹0.00</output>
+          </div>
+          <div class="result-divider"></div>
+          <p class="per-person-label">EACH PERSON PAYS</p>
+          <output class="per-person" id="per-person">₹0.00</output>
+          <div class="result-foot">
+            <span id="people-summary">Including 1 person</span>
+            <span id="tip-summary">15% tip</span>
+          </div>
+        </section>
+      </div>
+      <footer>Made with <span aria-label="love">♥</span> · Veda Technology Web Development Track</footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
