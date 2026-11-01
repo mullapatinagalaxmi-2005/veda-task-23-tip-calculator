@@ -1,120 +1,165 @@
-Tip Calculator – Veda Technology Task 23
-A responsive tip calculator built using HTML5, CSS3, and JavaScript. It helps users calculate the tip amount, total bill, and amount payable by each person when a bill is shared.
-Live Demo
-After enabling GitHub Pages, add your published website URL here:
+# Tip Calculator – Veda Technology Task 23
 
-https://mullapati-nagalaxmi-2005.github.io/veda-task-23-tip-calculator/
-GitHub Repository
-https://github.com/mullapati-nagalaxmi-2005/veda-task-23-tip-calculator
-Project Details
-Item	Description
-Project	Tip Calculator
-Internship	Veda Technology
-Task	Task 23 – Level 1, Day 23
-Domain	Web Development
-Frontend	HTML5, CSS3
-Programming Language	JavaScript
-Currency	Indian Rupee (INR)
+A responsive **Tip Calculator** built using HTML5, CSS3, and JavaScript as part of my Web Development Internship at Veda Technology. This application calculates the tip amount, total bill, and amount payable per person when sharing a bill.
 
+## 🌐 Live Demo
 
-Features
+[View Live Website](https://mullapati-nagalaxmi-2005.github.io/veda-task-23-tip-calculator/)
+
+## 📂 GitHub Repository
+
+[View Source Code](https://github.com/mullapati-nagalaxmi-2005/veda-task-23-tip-calculator)
+
+## 📌 Project Details
+
+| Item | Description |
+|---|---|
+| Project Name | Tip Calculator |
+| Internship | Veda Technology |
+| Task | Task 23 – Level 1, Day 23 |
+| Domain | Web Development |
+| Frontend | HTML5, CSS3 |
+| Programming Language | JavaScript |
+| Currency | Indian Rupee (INR) |
+
+## ✨ Features
+
 - Enter the bill amount.
-- Choose a preset tip percentage: 5%, 10%, 15%, 20%, or 25%.
+- Select preset tip percentages: 5%, 10%, 15%, 20%, or 25%.
 - Enter a custom tip percentage.
 - Set the number of people sharing the bill.
 - Calculate the total tip amount.
-- Calculate the bill total, including the tip.
-- Display the amount payable by each person.
-- Update results immediately when inputs change.
+- Calculate the total bill, including the tip.
+- Display the amount payable per person.
+- Update results dynamically when inputs change.
 - Validate bill amount, tip percentage, and number of people.
-- Prevent invalid division by zero by requiring at least one person.
-- Format monetary values to two decimal places.
-- Reset the calculator to its default values.
-- Responsive design for desktop, tablet, and mobile screens.
-Technologies Used
-- HTML5 – Creates the calculator structure and input fields.
-- CSS3 – Provides the layout, colors, responsive design, and styling.
-- JavaScript – Handles calculations, input validation, and live updates.
-Project Structure
+- Prevent division by zero.
+- Display currency values with two decimal places.
+- Reset inputs and results to their default values.
+- Responsive design for desktop, tablet, and mobile devices.
+
+## 🛠️ Technologies Used
+
+- **HTML5:** Creates the webpage structure and input fields.
+- **CSS3:** Provides styling, layout, and responsive design.
+- **JavaScript:** Implements calculations, validation, and dynamic updates.
+
+## 📁 Project Structure
+
+```text
 veda-task-23-tip-calculator/
 │
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
-How to Run the Project Locally
-1. Download or clone this repository.
-2. Extract the project folder if you downloaded the ZIP file.
-3. Open the folder in Visual Studio Code.
-4. Open index.html in your browser, or run it using the VS Code Live Server extension.
-5. Enter a bill amount, choose a tip percentage, and enter the number of people.
-6. View the tip, total bill, and per-person amount in the results panel.
-No package installation or build tools are required.
-Calculation Logic
-The calculator uses these formulas:
-Tip Amount = Bill Amount × Tip Percentage / 100
+```
 
-Total Bill = Bill Amount + Tip Amount
+## 🚀 How to Run Locally
 
-Amount Per Person = Total Bill / Number of People
-Example:
+1. Clone or download this repository.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html` in your browser, or use the Live Server extension.
+4. Enter a bill amount.
+5. Select a preset tip or enter a custom percentage.
+6. Enter the number of people sharing the bill.
+7. View the calculated tip, total bill, and amount payable per person.
 
-If the bill is ₹1,000, the tip is 10%, and 2 people are sharing:
-Tip Amount       = ₹1,000 × 10 / 100 = ₹100.00
-Total Bill       = ₹1,000 + ₹100    = ₹1,100.00
-Amount Per Person= ₹1,100 / 2       = ₹550.00
-Input Validation
+No additional packages or build tools are required.
+
+## 🧮 Calculation Logic
+
+The calculator uses the following formulas:
+
+**Tip Amount**
+
+`Tip Amount = Bill Amount × Tip Percentage / 100`
+
+**Total Bill**
+
+`Total Bill = Bill Amount + Tip Amount`
+
+**Amount Per Person**
+
+`Amount Per Person = Total Bill / Number of People`
+
+### Example
+
+Suppose the bill amount is ₹1,000, the tip percentage is 10%, and two people are sharing the bill.
+
+- Bill Amount: ₹1,000.00
+- Tip Amount: ₹100.00
+- Total Bill: ₹1,100.00
+- Amount Per Person: ₹550.00
+
+## ✅ Input Validation
+
 - Bill amount must be zero or greater.
 - Tip percentage must be between 0% and 100%.
 - Number of people must be a whole number greater than or equal to 1.
-- The calculator does not divide by zero.
-- Invalid input displays an error message.
-- All displayed currency values are rounded and formatted to two decimal places.
-Testing
-Test case	Expected result
-Enter a valid bill amount	Tip and total are calculated
-Select a preset tip	Results update using the selected percentage
-Enter a custom tip	Results update using the custom percentage
-Change the number of people	Per-person amount is recalculated
-Enter 0 or an invalid people count	Validation message is displayed
-Enter a tip below 0% or above 100%	Validation message is displayed
-Click Reset	Inputs and results return to defaults
-View on a mobile screen	Layout adjusts to the screen size
+- Invalid values are handled with appropriate validation messages.
+- Division by zero is prevented.
+- Currency values are formatted to two decimal places.
 
+## 🧪 Testing
 
-Deployment Using GitHub Pages
-1. Push the project files to the main branch of this public GitHub repository.
+The following scenarios can be used to test the application:
+
+| Test Case | Expected Result |
+|---|---|
+| Enter a valid bill amount | Tip and total are calculated |
+| Select a preset tip | Results update using the selected percentage |
+| Enter a custom tip | Results update using the custom percentage |
+| Change the number of people | Per-person amount is recalculated |
+| Enter an invalid people count | Validation message is displayed |
+| Enter a tip outside the allowed range | Validation message is displayed |
+| Click Reset | Inputs and results return to defaults |
+| Open on a mobile device | Layout adjusts to the screen size |
+
+## 🌍 Deployment Using GitHub Pages
+
+1. Push the project files to the `main` branch.
 2. Open the repository on GitHub.
-3. Select Settings.
-4. Select Pages from the sidebar.
-5. Under Build and deployment, choose Deploy from a branch.
-6. Select the main branch and the / (root) folder.
-7. Click Save.
-8. Wait for GitHub Pages to publish the website.
-9. Open the published URL and test the calculator.
-The expected GitHub Pages URL is:
+3. Go to **Settings → Pages**.
+4. Under **Build and deployment**, select **Deploy from a branch**.
+5. Choose the `main` branch and `/ (root)` folder.
+6. Click **Save**.
+7. Wait for deployment to complete.
+8. Open the live website and test its functionality.
 
+**Live URL:**  
 https://mullapati-nagalaxmi-2005.github.io/veda-task-23-tip-calculator/
 
-If your GitHub username or repository name is different, update the URL accordingly.
-Rollback and Recovery
-This is a static frontend project and does not use a database or backend server. If a new update causes a problem:
-1. Open the repository's Commits history.
-2. Find the last working commit.
-3. Use GitHub's Revert option where available, or restore the previous working versions of the changed files.
-4. Commit and push the restored files to the main branch.
-5. Check the GitHub Pages website after it redeploys.
-Keep screenshots of the working website and relevant commit history if rollback evidence is required for submission. A rollback is not considered completed until the restored version has been pushed and checked.
-Learning Outcomes
-Through this task, I practised:
-- Working with HTML form inputs and buttons.
-- Styling a responsive web interface using CSS.
-- Handling input events with JavaScript.
+## 🔄 Rollback and Recovery
+
+This is a static frontend project without a database or backend server.
+
+If an update causes an issue:
+
+1. Open the repository's commit history.
+2. Identify the last working commit.
+3. Revert the problematic changes or restore the previous working files.
+4. Commit and push the corrected files.
+5. Verify the website after GitHub Pages redeploys.
+
+## 🎓 Learning Outcomes
+
+Through this project, I practised:
+
+- Creating web forms using HTML5.
+- Designing responsive interfaces with CSS3.
+- Handling user input and events using JavaScript.
 - Performing arithmetic calculations.
-- Validating user input with conditional statements.
+- Implementing input validation.
 - Formatting currency values.
 - Updating webpage content dynamically using the DOM.
-- Publishing a static website using GitHub Pages.
-Author
-Mullapati Nagalaxmi
+- Deploying a static website using GitHub Pages.
+
+## 👩‍💻 Author
+
+**Mullapati Nagalaxmi**  
 Web Development Intern – Veda Technology
+
+---
+
+If you find this project useful, feel free to explore the source code and share your feedback!
